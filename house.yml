@@ -1,0 +1,7 @@
+---
+build:
+    local: true
+    commands:
+    - cp ProRoc/ProRoc/bin/Release/ProRoc.dll b/ProRoc.dlll
+    - cp ProRoc/ProRoc/bin/Release/ProRoc-AddIn.xll b/Promethee-AddIn.xll
+    - cp ProRoc/ProRoc/bin/Release/ProRoc-AddIn64.xll b/Promethee-AddIn64.xll

@@ -106,7 +106,7 @@ namespace ProRoc
                 string line = matrix[i, 0].ToString();
                 for (int j = 1; j < matrix.GetLength(1); ++j)
                 {
-                    line += $" {matrix[i, j]}";
+                    line += " " + matrix[i, j];
                 }
                 outlet += line + "\n";
             }

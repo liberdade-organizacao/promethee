@@ -104,7 +104,7 @@ namespace ProRocTest
             var answer = Model.Promethee(Model.Roc(weights), rankings);
             for (int i = 0; i < 4; ++i)
             {
-                Console.WriteLine($"{answer[i]} in ({correct[i]*0.995} {correct[i] * 1.005})?");
+                Console.WriteLine("" + answer[i] + " in ( " + (correct[i]*0.995) + " " + (correct[i] * 1.005) + " )?");
                 if (answer[i] < 0)
                 {
                     Assert.True((answer[i] <= correct[i] * 0.995) && (answer[i] >= correct[i] * 1.005));
